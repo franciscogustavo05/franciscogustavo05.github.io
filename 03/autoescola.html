@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoescola</title>
+</head>
+<body>
+    <form id="autoescola">
+        <legend><h1>AUTOESCOLA - INSCRIÇÃO</h1></legend>
+
+        <p><b>Informe sua idade abaixo para verificarmos sua eligibilidade.</b></p>
+
+        <label for="idade"><b>Idade:</b>
+            <input type="number"
+                id="id_idade"
+                name="idade"
+                placeholder="Informe sua idade: "
+                minlength="1"
+                maxlength="3"
+                autofocus
+                required>
+                <button type="submit">CONFIRMAR</button>
+        </label>
+
+    </form>
+    <div id="id_result"></div>
+
+    <script src="autoescola.js"></script>
+</body>
+</html>
