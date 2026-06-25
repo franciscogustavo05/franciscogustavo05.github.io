@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cursos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="form">
+        <fieldset>
+            <legend>Cadastre Seu Curso</legend>
+
+            <label for="id_nome">Nome:
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="id_nome" 
+                    placeholder="Informe seu nome:" 
+                    required
+                >
+            </label>Cursos:
+            <select id="id_curso">
+                <option selected disabled>Selecione seu Curso:</option>
+                <option value="Agronegócio">Agronegócio</option>
+                <option value="Enfermagem">Enfermagem</option>
+                <option value="Finanças">Finanças</option>
+                <option value="Informática">Informática</option>
+            </select>
+            <br>
+
+            <label for="id_matricula">Matrícula:
+                <input 
+                    type="text"
+                    inputmode="numeric"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    minlength="12"
+                    maxlength="12"
+                    name="matricula" 
+                    id="id_matricula" 
+                    placeholder="Informe sua matricula:" 
+                    required
+                >
+            </label>
+
+            <button type="submit" id="btn_cadastrar">
+                Cadastrar
+            </button>
+
+            <button type="button" onclick="listar()">
+                Consultar
+            </button>
+
+            <br>
+            <br>
+        </fieldset>
+    </form>
+
+    <div>
+        <fieldset id="matriculados">
+            <legend>Cursos cadastrados</legend>
+        </fieldset>
+    </div>
+
+    <br>
+    <div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

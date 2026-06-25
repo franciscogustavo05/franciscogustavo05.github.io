@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #1d1d1d;
+    padding: 40px 20px; 
+    margin: 0;
+   
+    background: linear-gradient(135deg, #e8e6fa 0%, #e8e6fa 100%);
+  
+}
+
+form, div {
+    width: 700px;
+    
+    margin: 0 auto 30px auto;
+}
+
+fieldset {
+    border: 2px solid #5132ff;
+    background-color: #ffffff; 
+    padding: 30px; 
+}
+
+legend {
+    color: #5132ff; 
+    font-weight: bold;
+    font-size: 20px; 
+   
+    padding: 0 10px;
+}
+input {
+    width: 100%;
+    padding: 10px; 
+    margin-top: 5px;
+    margin-bottom: 20px; 
+    border: 1px solid #5132ff;
+    border-radius: 6px;
+    box-sizing: border-box; 
+}
+input:focus {
+    outline: none;
+    border-color: #5132ff;
+    box-shadow: 0 0 5px rgba(38, 0, 175, 0.4);
+}
+
+button {
+    background-color: #5132ff; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color:#5132ff;
+    transform: translateY(-2px);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #5132ff;
+    margin: 20px 0;
+}
+
+select {
+        width: 100%;
+    padding: 10px; 
+    margin-top: 5px;
+    margin-bottom: 20px; 
+    border: 1px solid #5132ff;
+    border-radius: 6px;
+    box-sizing: border-box; 
+}
